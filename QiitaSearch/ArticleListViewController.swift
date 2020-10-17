@@ -6,24 +6,61 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
-class ArticleListViewController: UIViewController {
 
+class ArticleListViewController: UIViewController, UITableViewDataSource {
+    
+    var articles: [[String: String?]] = []
+    let table = UITableView()
+    let aaa = "Chinoyatta"
+    var addBtn: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.title = aaa + "の記事"
+        
+        table.frame = view.frame
+        view.addSubview(table)
+        table.dataSource = self
+        
+        getArticles()
     }
     
+    func getArticles() {
+        
+        let url = "https://qiita.com/api/v2/users/" + aaa + "/items"
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        AF.request(url, method: .get)
+            .responseJSON { response in
+                switch response.result {
+                case .success(let value):
+                    let json = JSON(value)
+                    json.forEach { (_, json) in
+                        let article: [String: String?] = [
+                            "title": json["title"].string,
+                            "userId": json["user"]["id"].string
+                        ]
+                        self.articles.append(article)
+                    }
+                    self.table.reloadData()
+                case .failure(let error):
+                    print("Error: \(String(describing: error))")
+                }
+            }
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return articles.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+        let article = articles[indexPath.row]
+        cell.textLabel?.text = article["title"]!
+        cell.detailTextLabel?.text = article["userId"]!
+        return cell
+    }
+    
 }
