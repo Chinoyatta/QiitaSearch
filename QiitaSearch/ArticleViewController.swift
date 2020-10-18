@@ -29,7 +29,7 @@ class ArticleViewController: UIViewController {
             return
         }
         let req = URLRequest(url: myUrl)
-        webView.load(req as URLRequest)
+        webView.load(req)
     }
     /*
      // MARK: - Navigation
