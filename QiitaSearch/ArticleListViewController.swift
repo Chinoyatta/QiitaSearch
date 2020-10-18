@@ -8,6 +8,7 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
+import WebKit
 
 
 class ArticleListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -15,6 +16,7 @@ class ArticleListViewController: UIViewController, UITableViewDataSource, UITabl
     var articles: [[String: String?]] = []
     let table = UITableView()
     let user = "Chinoyatta"
+    var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +43,7 @@ class ArticleListViewController: UIViewController, UITableViewDataSource, UITabl
                         let article: [String: String?] = [
                             "title": json["title"].string,
                             "userId": json["user"]["id"].string,
-                            "url":json["user"].string
+                            "url":json["url"].string
                         ]
                         self.articles.append(article)
                     }
@@ -65,7 +67,11 @@ class ArticleListViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-      print("Selected!")
+        let article = articles[indexPath.row]
+        webView = WKWebView(frame: view.frame)
+        view.addSubview(webView)
+        let request = URLRequest(url: URL(string: article["url"]!!)!)
+        webView.load(request)
         
     }
     
