@@ -10,7 +10,7 @@ import SwiftyJSON
 import Alamofire
 
 
-class ArticleListViewController: UIViewController, UITableViewDataSource {
+class ArticleListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var articles: [[String: String?]] = []
     let table = UITableView()
@@ -23,6 +23,7 @@ class ArticleListViewController: UIViewController, UITableViewDataSource {
         table.frame = view.frame
         view.addSubview(table)
         table.dataSource = self
+        table.delegate = self
         
         getArticles()
     }
@@ -61,6 +62,11 @@ class ArticleListViewController: UIViewController, UITableViewDataSource {
         cell.textLabel?.text = article["title"]!
         cell.detailTextLabel?.text = article["userId"]!
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      print("Selected!")
+        
     }
     
 }
