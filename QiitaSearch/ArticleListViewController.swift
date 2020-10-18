@@ -14,11 +14,11 @@ class ArticleListViewController: UIViewController, UITableViewDataSource {
     
     var articles: [[String: String?]] = []
     let table = UITableView()
-    let aaa = "Chinoyatta"
+    let user = "Chinoyatta"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = aaa + "の記事"
+        self.title = user + "の記事"
         
         table.frame = view.frame
         view.addSubview(table)
@@ -29,7 +29,7 @@ class ArticleListViewController: UIViewController, UITableViewDataSource {
     
     func getArticles() {
         
-        let url = "https://qiita.com/api/v2/users/" + aaa + "/items"
+        let url = "https://qiita.com/api/v2/users/" + user + "/items"
         print(url)
         AF.request(url, method: .get)
             .responseJSON { response in
