@@ -68,10 +68,10 @@ class ArticleListViewController: UIViewController, UITableViewDataSource, UITabl
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let article = articles[indexPath.row]
-        webView = WKWebView(frame: view.frame)
-        view.addSubview(webView)
-        let request = URLRequest(url: URL(string: article["url"]!!)!)
-        webView.load(request)
+        let articleVC = ArticleViewController()
+        articleVC.title = article["title"]!
+        articleVC.url = article["url"]!
+        self.navigationController?.pushViewController(articleVC, animated: true)
         
     }
     
