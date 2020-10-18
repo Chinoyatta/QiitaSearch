@@ -8,19 +8,28 @@
 import UIKit
 import WebKit
 
-class ArticleViewController: UIViewController {
+class ArticleViewController: UIViewController, WKNavigationDelegate {
     
     let webView = WKWebView()
     let articleListVC = ArticleListViewController()
     var url: String?
+    var activityIndicatorView = UIActivityIndicatorView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         webView.frame = self.view.frame
+        webView.navigationDelegate = self
         self.view.addSubview(webView)
         
         loadURL()
+        
+        // WebView読み込み完了時まで表示されるActivityIndicatorの表示
+        activityIndicatorView.center = view.center
+        activityIndicatorView.style = .whiteLarge
+        activityIndicatorView.color = .green
+        view.addSubview(activityIndicatorView)
+        activityIndicatorView.startAnimating()
         // Do any additional setup after loading the view.
     }
     
@@ -40,5 +49,11 @@ class ArticleViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
+
+    // WebViewの読み込み完了時にcall
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        print("読み込み完了")
+        activityIndicatorView.stopAnimating()
+    }
     
 }
