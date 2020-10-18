@@ -31,7 +31,7 @@ class ArticleListViewController: UIViewController, UITableViewDataSource {
     func getArticles() {
         
         let url = "https://qiita.com/api/v2/users/" + aaa + "/items"
-
+        print(url)
         AF.request(url, method: .get)
             .responseJSON { response in
                 switch response.result {
@@ -40,7 +40,8 @@ class ArticleListViewController: UIViewController, UITableViewDataSource {
                     json.forEach { (_, json) in
                         let article: [String: String?] = [
                             "title": json["title"].string,
-                            "userId": json["user"]["id"].string
+                            "userId": json["user"]["id"].string,
+                            "url":json["user"].string
                         ]
                         self.articles.append(article)
                     }
