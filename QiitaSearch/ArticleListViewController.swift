@@ -15,7 +15,6 @@ class ArticleListViewController: UIViewController, UITableViewDataSource {
     var articles: [[String: String?]] = []
     let table = UITableView()
     let aaa = "Chinoyatta"
-    var addBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
