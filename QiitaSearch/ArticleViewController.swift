@@ -26,7 +26,7 @@ class ArticleViewController: UIViewController, WKNavigationDelegate {
         
         // WebView読み込み完了時まで表示されるActivityIndicatorの表示
         activityIndicatorView.center = view.center
-        activityIndicatorView.style = .whiteLarge
+        activityIndicatorView.style = .large
         activityIndicatorView.color = .green
         view.addSubview(activityIndicatorView)
         activityIndicatorView.startAnimating()
