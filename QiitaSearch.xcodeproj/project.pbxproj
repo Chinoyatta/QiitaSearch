@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C304292253DCD5E00A9D752 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C304291253DCD5E00A9D752 /* RxSwift.framework */; };
+		2C304297253DCDC400A9D752 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C304296253DCDC400A9D752 /* RxCocoa.framework */; };
+		2C304299253DCDDD00A9D752 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C304298253DCDDD00A9D752 /* RxRelay.framework */; };
 		2C48A13C253C290000B6035F /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48A13B253C290000B6035F /* ArticleViewController.swift */; };
 		2C48A145253C2FE000B6035F /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48A13B253C290000B6035F /* ArticleViewController.swift */; };
 		2C48A146253C2FE000B6035F /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48A13B253C290000B6035F /* ArticleViewController.swift */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C304291253DCD5E00A9D752 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		2C304296253DCDC400A9D752 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		2C304298253DCDDD00A9D752 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		2C48A13B253C290000B6035F /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		2C49E17A253883F700A3146B /* QiitaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C49E17D253883F700A3146B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C304299253DCDDD00A9D752 /* RxRelay.framework in Frameworks */,
+				2C304297253DCDC400A9D752 /* RxCocoa.framework in Frameworks */,
+				2C304292253DCD5E00A9D752 /* RxSwift.framework in Frameworks */,
 				2C49E1B8253887B800A3146B /* SwiftyJSON.framework in Frameworks */,
 				2C49E1B6253887A300A3146B /* Alamofire.framework in Frameworks */,
 			);
@@ -155,6 +164,9 @@
 		2C49E1B4253887A300A3146B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C304298253DCDDD00A9D752 /* RxRelay.framework */,
+				2C304296253DCDC400A9D752 /* RxCocoa.framework */,
+				2C304291253DCD5E00A9D752 /* RxSwift.framework */,
 				2C49E1B7253887B800A3146B /* SwiftyJSON.framework */,
 				2C49E1B5253887A300A3146B /* Alamofire.framework */,
 			);
@@ -298,6 +310,9 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
 			);
 			outputFileListPaths = (
 			);
