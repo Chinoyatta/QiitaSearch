@@ -1,6 +1,7 @@
 # QiitaSearch
-
-QiitaApiから特定の投稿者の記事を取得し、TableView上に表示します。
+## 概要  
+QiitaApiから特定の投稿者の記事を取得し、TableView上に表示します。  
+また、セルををタップするとその記事をwebview上で閲覧することができます。
 
 環境:Xcode12.0.1  
 動作確認iOS: iOS14.0  
