@@ -55,6 +55,10 @@ class ArticleListViewController: UIViewController, UITableViewDataSource, UITabl
             }
     }
     
+}
+
+extension ArticleListViewController {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articles.count
     }
@@ -88,5 +92,4 @@ class ArticleListViewController: UIViewController, UITableViewDataSource, UITabl
         self.navigationController?.pushViewController(articleVC, animated: true)
         
     }
-    
 }
