@@ -42,7 +42,8 @@ class ArticleListViewController: UIViewController, UITableViewDataSource, UITabl
                     json.forEach { (_, json) in
                         let article: [String: String?] = [
                             "title": json["title"].string,
-                            "userId": json["user"]["id"].string,
+                            "likes_count": json["likes_count"].description,
+                            "userImage":json["user"]["profile_image_url"].string,
                             "url":json["url"].string
                         ]
                         self.articles.append(article)
@@ -64,11 +65,12 @@ class ArticleListViewController: UIViewController, UITableViewDataSource, UITabl
         guard let title = article["title"] else {
             fatalError("title nil")
         }
-        guard let userId = article["userId"] else {
-            fatalError("usrId nil")
+        guard let likes_count = article["likes_count"] else {
+            fatalError("likes_count nil")
         }
+        
         cell.textLabel?.text = title
-        cell.detailTextLabel?.text = userId
+        cell.detailTextLabel?.text = "LGTM:" + likes_count!
         return cell
     }
     
