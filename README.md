@@ -28,7 +28,7 @@ QiitaApiから特定の投稿者の記事を取得し、TableView上に表示し
 % export XCODE_XCCONFIG_FILE=(xcconfigのパス）
 ```  
 を入力してから再度updateコマンドを叩いて見てください。  
-参考:[Xcode12でcarthageのFrameworkを更新しようとするとTask failed with exit code 1:になる時の対処法](https://qiita.com/pinoerumo/items/0a340078ea2e0f8d01b0)  
+参考:[Xcode12でcarthageのFrameworkを更新しようとするとTask failed with exit code 1:になる時の対処法(Qiita)](https://qiita.com/pinoerumo/items/0a340078ea2e0f8d01b0)  
 
 ### アプリを動かす際に
 
