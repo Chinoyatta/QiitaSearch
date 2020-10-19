@@ -16,6 +16,8 @@ class ArticleListViewController: UIViewController, UITableViewDataSource, UITabl
     var articles: [[String: String?]] = []
     let table = UITableView()
     let user = "Chinoyatta"
+    let pageNo = "1"
+    let perPage = "100"
     var webView: WKWebView!
     
     override func viewDidLoad() {
@@ -32,7 +34,7 @@ class ArticleListViewController: UIViewController, UITableViewDataSource, UITabl
     
     func getArticles() {
         
-        let url = "https://qiita.com/api/v2/users/" + user + "/items"
+        let url = "https://qiita.com/api/v2/users/" + user + "/items?page=" + pageNo + "&per_page=" + perPage
         print(url)
         AF.request(url, method: .get)
             .responseJSON { response in
