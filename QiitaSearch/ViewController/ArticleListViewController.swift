@@ -61,16 +61,28 @@ class ArticleListViewController: UIViewController, UITableViewDataSource, UITabl
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
         let article = articles[indexPath.row]
-        cell.textLabel?.text = article["title"]!
-        cell.detailTextLabel?.text = article["userId"]!
+        guard let title = article["title"] else {
+            fatalError("title nil")
+        }
+        guard let userId = article["userId"] else {
+            fatalError("usrId nil")
+        }
+        cell.textLabel?.text = title
+        cell.detailTextLabel?.text = userId
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let article = articles[indexPath.row]
         let articleVC = ArticleViewController()
-        articleVC.title = article["title"]!
-        articleVC.url = article["url"]!
+        guard let title = article["title"] else {
+            fatalError("title nil")
+        }
+        guard let url = article["url"] else {
+            fatalError("url nil")
+        }
+        articleVC.title = title
+        articleVC.url = url
         self.navigationController?.pushViewController(articleVC, animated: true)
         
     }
