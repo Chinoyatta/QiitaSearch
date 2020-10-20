@@ -25,6 +25,21 @@
 		2C49E1C22538890B00A3146B /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49E1C12538890B00A3146B /* ArticleListViewController.swift */; };
 		2C49E1C32538890B00A3146B /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49E1C12538890B00A3146B /* ArticleListViewController.swift */; };
 		2C49E1C42538890B00A3146B /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49E1C12538890B00A3146B /* ArticleListViewController.swift */; };
+		2C75C603253F0DCE009070C1 /* ArticleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C602253F0DCE009070C1 /* ArticleListModel.swift */; };
+		2C75C604253F0DCE009070C1 /* ArticleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C602253F0DCE009070C1 /* ArticleListModel.swift */; };
+		2C75C605253F0DCE009070C1 /* ArticleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C602253F0DCE009070C1 /* ArticleListModel.swift */; };
+		2C75C60A253F0EF1009070C1 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C609253F0EF1009070C1 /* ArticleListViewModel.swift */; };
+		2C75C60B253F0EF1009070C1 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C609253F0EF1009070C1 /* ArticleListViewModel.swift */; };
+		2C75C60C253F0EF1009070C1 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C609253F0EF1009070C1 /* ArticleListViewModel.swift */; };
+		2C75C620253F162C009070C1 /* QiitaArticleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C61F253F162C009070C1 /* QiitaArticleAPI.swift */; };
+		2C75C621253F162C009070C1 /* QiitaArticleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C61F253F162C009070C1 /* QiitaArticleAPI.swift */; };
+		2C75C622253F162C009070C1 /* QiitaArticleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C61F253F162C009070C1 /* QiitaArticleAPI.swift */; };
+		2C75C62D253F247C009070C1 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C62C253F247C009070C1 /* ArticleTableViewCell.swift */; };
+		2C75C62E253F247C009070C1 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C62C253F247C009070C1 /* ArticleTableViewCell.swift */; };
+		2C75C62F253F247C009070C1 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C62C253F247C009070C1 /* ArticleTableViewCell.swift */; };
+		2C75C636253F2A0D009070C1 /* RxArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C635253F2A0D009070C1 /* RxArticleViewController.swift */; };
+		2C75C637253F2A0D009070C1 /* RxArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C635253F2A0D009070C1 /* RxArticleViewController.swift */; };
+		2C75C638253F2A0D009070C1 /* RxArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C635253F2A0D009070C1 /* RxArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +81,11 @@
 		2C49E1B5253887A300A3146B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		2C49E1B7253887B800A3146B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		2C49E1C12538890B00A3146B /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
+		2C75C602253F0DCE009070C1 /* ArticleListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListModel.swift; sourceTree = "<group>"; };
+		2C75C609253F0EF1009070C1 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
+		2C75C61F253F162C009070C1 /* QiitaArticleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleAPI.swift; sourceTree = "<group>"; };
+		2C75C62C253F247C009070C1 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		2C75C635253F2A0D009070C1 /* RxArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +159,11 @@
 				2C49E186253883FD00A3146B /* Assets.xcassets */,
 				2C49E188253883FD00A3146B /* LaunchScreen.storyboard */,
 				2C49E18B253883FD00A3146B /* Info.plist */,
+				2C75C602253F0DCE009070C1 /* ArticleListModel.swift */,
+				2C75C609253F0EF1009070C1 /* ArticleListViewModel.swift */,
+				2C75C61F253F162C009070C1 /* QiitaArticleAPI.swift */,
+				2C75C62C253F247C009070C1 /* ArticleTableViewCell.swift */,
+				2C75C635253F2A0D009070C1 /* RxArticleViewController.swift */,
 			);
 			path = QiitaSearch;
 			sourceTree = "<group>";
@@ -329,8 +354,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C75C603253F0DCE009070C1 /* ArticleListModel.swift in Sources */,
+				2C75C60A253F0EF1009070C1 /* ArticleListViewModel.swift in Sources */,
+				2C75C636253F2A0D009070C1 /* RxArticleViewController.swift in Sources */,
 				2C49E1C22538890B00A3146B /* ArticleListViewController.swift in Sources */,
 				2C48A13C253C290000B6035F /* ArticleViewController.swift in Sources */,
+				2C75C62D253F247C009070C1 /* ArticleTableViewCell.swift in Sources */,
+				2C75C620253F162C009070C1 /* QiitaArticleAPI.swift in Sources */,
 				2C49E17E253883F700A3146B /* AppDelegate.swift in Sources */,
 				2C49E180253883F700A3146B /* SceneDelegate.swift in Sources */,
 			);
@@ -342,7 +372,12 @@
 			files = (
 				2C49E195253883FD00A3146B /* QiitaSearchTests.swift in Sources */,
 				2C48A145253C2FE000B6035F /* ArticleViewController.swift in Sources */,
+				2C75C604253F0DCE009070C1 /* ArticleListModel.swift in Sources */,
+				2C75C621253F162C009070C1 /* QiitaArticleAPI.swift in Sources */,
 				2C49E1C32538890B00A3146B /* ArticleListViewController.swift in Sources */,
+				2C75C637253F2A0D009070C1 /* RxArticleViewController.swift in Sources */,
+				2C75C62E253F247C009070C1 /* ArticleTableViewCell.swift in Sources */,
+				2C75C60B253F0EF1009070C1 /* ArticleListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +387,12 @@
 			files = (
 				2C49E1A0253883FD00A3146B /* QiitaSearchUITests.swift in Sources */,
 				2C48A146253C2FE000B6035F /* ArticleViewController.swift in Sources */,
+				2C75C605253F0DCE009070C1 /* ArticleListModel.swift in Sources */,
+				2C75C622253F162C009070C1 /* QiitaArticleAPI.swift in Sources */,
 				2C49E1C42538890B00A3146B /* ArticleListViewController.swift in Sources */,
+				2C75C638253F2A0D009070C1 /* RxArticleViewController.swift in Sources */,
+				2C75C62F253F247C009070C1 /* ArticleTableViewCell.swift in Sources */,
+				2C75C60C253F0EF1009070C1 /* ArticleListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

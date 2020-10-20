@@ -1,8 +1,8 @@
 //
-//  ArticleListViewController.swift
+//  RxArticleViewController.swift
 //  QiitaSearch
 //
-//  Created by 千野栄一 on 2020/10/15.
+//  Created by 千野栄一 on 2020/10/20.
 //
 
 import Foundation
@@ -14,7 +14,7 @@ import RxSwift
 import RxCocoa
 
 
-class ArticleListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class RxArticleListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var articles: [[String: String?]] = []
     let table = UITableView()
@@ -33,7 +33,29 @@ class ArticleListViewController: UIViewController, UITableViewDataSource, UITabl
         table.dataSource = self
         table.delegate = self
         
-        getArticles()
+        //getArticles()
+        
+        // viewModelの初期化
+        let articleListViewModel = ArticleListViewModel(api: QiitaArticleAPI())
+        
+        articleListViewModel.getArticles(user: "Chinoyatta")
+        
+        // RxSwiftでのUITableViewDelegateの宣言
+        table.rx.setDelegate(self).disposed(by: disposeBag)
+        
+        // 一覧データをUITableViewにセットする処理
+        articleListViewModel.articleLists.asObservable().bind(to: table.rx.items) { (tableView, row, model) in
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
+            cell.textLabel?.text = model.articleTitle
+            //cell.detailTextLabel?.text = "LGTM:" + model.likes_count
+            return cell
+        }.disposed(by: disposeBag)
+        
+        // UITableViewに配置されたセルをタップした場合の処理
+        table.rx.itemSelected.subscribe(onNext: { [weak self] indexPath in
+            let articles = articleListViewModel.articleLists.value[indexPath.row]
+            //self?.showNewsWebPage(newsUrlString: recentNews.newsWebUrlString)
+        }).disposed(by: disposeBag)
     }
     
     func getArticles() {
@@ -63,7 +85,7 @@ class ArticleListViewController: UIViewController, UITableViewDataSource, UITabl
     
 }
 
-extension ArticleListViewController {
+extension RxArticleListViewController {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articles.count
@@ -99,3 +121,4 @@ extension ArticleListViewController {
         
     }
 }
+
