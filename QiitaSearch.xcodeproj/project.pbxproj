@@ -7,14 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C304292253DCD5E00A9D752 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C304291253DCD5E00A9D752 /* RxSwift.framework */; };
+		2C304297253DCDC400A9D752 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C304296253DCDC400A9D752 /* RxCocoa.framework */; };
+		2C304299253DCDDD00A9D752 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C304298253DCDDD00A9D752 /* RxRelay.framework */; };
+		2C48A13C253C290000B6035F /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48A13B253C290000B6035F /* ArticleViewController.swift */; };
+		2C48A145253C2FE000B6035F /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48A13B253C290000B6035F /* ArticleViewController.swift */; };
+		2C48A146253C2FE000B6035F /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48A13B253C290000B6035F /* ArticleViewController.swift */; };
 		2C49E17E253883F700A3146B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49E17D253883F700A3146B /* AppDelegate.swift */; };
 		2C49E180253883F700A3146B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49E17F253883F700A3146B /* SceneDelegate.swift */; };
-		2C49E182253883F700A3146B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49E181253883F700A3146B /* ViewController.swift */; };
 		2C49E185253883F700A3146B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C49E183253883F700A3146B /* Main.storyboard */; };
 		2C49E187253883FD00A3146B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C49E186253883FD00A3146B /* Assets.xcassets */; };
 		2C49E18A253883FD00A3146B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C49E188253883FD00A3146B /* LaunchScreen.storyboard */; };
 		2C49E195253883FD00A3146B /* QiitaSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49E194253883FD00A3146B /* QiitaSearchTests.swift */; };
 		2C49E1A0253883FD00A3146B /* QiitaSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49E19F253883FD00A3146B /* QiitaSearchUITests.swift */; };
+		2C49E1B6253887A300A3146B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C49E1B5253887A300A3146B /* Alamofire.framework */; };
+		2C49E1B8253887B800A3146B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C49E1B7253887B800A3146B /* SwiftyJSON.framework */; };
+		2C49E1C22538890B00A3146B /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49E1C12538890B00A3146B /* ArticleListViewController.swift */; };
+		2C49E1C32538890B00A3146B /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49E1C12538890B00A3146B /* ArticleListViewController.swift */; };
+		2C49E1C42538890B00A3146B /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49E1C12538890B00A3146B /* ArticleListViewController.swift */; };
+		2C75C603253F0DCE009070C1 /* ArticleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C602253F0DCE009070C1 /* ArticleListModel.swift */; };
+		2C75C604253F0DCE009070C1 /* ArticleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C602253F0DCE009070C1 /* ArticleListModel.swift */; };
+		2C75C605253F0DCE009070C1 /* ArticleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C602253F0DCE009070C1 /* ArticleListModel.swift */; };
+		2C75C60A253F0EF1009070C1 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C609253F0EF1009070C1 /* ArticleListViewModel.swift */; };
+		2C75C60B253F0EF1009070C1 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C609253F0EF1009070C1 /* ArticleListViewModel.swift */; };
+		2C75C60C253F0EF1009070C1 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C609253F0EF1009070C1 /* ArticleListViewModel.swift */; };
+		2C75C620253F162C009070C1 /* QiitaArticleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C61F253F162C009070C1 /* QiitaArticleAPI.swift */; };
+		2C75C621253F162C009070C1 /* QiitaArticleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C61F253F162C009070C1 /* QiitaArticleAPI.swift */; };
+		2C75C622253F162C009070C1 /* QiitaArticleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C61F253F162C009070C1 /* QiitaArticleAPI.swift */; };
+		2C75C62D253F247C009070C1 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C62C253F247C009070C1 /* ArticleTableViewCell.swift */; };
+		2C75C62E253F247C009070C1 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C62C253F247C009070C1 /* ArticleTableViewCell.swift */; };
+		2C75C62F253F247C009070C1 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C62C253F247C009070C1 /* ArticleTableViewCell.swift */; };
+		2C75C636253F2A0D009070C1 /* RxArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C635253F2A0D009070C1 /* RxArticleViewController.swift */; };
+		2C75C637253F2A0D009070C1 /* RxArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C635253F2A0D009070C1 /* RxArticleViewController.swift */; };
+		2C75C638253F2A0D009070C1 /* RxArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75C635253F2A0D009070C1 /* RxArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +60,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C304291253DCD5E00A9D752 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		2C304296253DCDC400A9D752 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		2C304298253DCDDD00A9D752 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		2C48A13B253C290000B6035F /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		2C49E17A253883F700A3146B /* QiitaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C49E17D253883F700A3146B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C49E17F253883F700A3146B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C49E181253883F700A3146B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C49E184253883F700A3146B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C49E186253883FD00A3146B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C49E189253883FD00A3146B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +77,15 @@
 		2C49E19B253883FD00A3146B /* QiitaSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiitaSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C49E19F253883FD00A3146B /* QiitaSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaSearchUITests.swift; sourceTree = "<group>"; };
 		2C49E1A1253883FD00A3146B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C49E1B0253885DD00A3146B /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		2C49E1B5253887A300A3146B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		2C49E1B7253887B800A3146B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		2C49E1C12538890B00A3146B /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
+		2C75C602253F0DCE009070C1 /* ArticleListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListModel.swift; sourceTree = "<group>"; };
+		2C75C609253F0EF1009070C1 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
+		2C75C61F253F162C009070C1 /* QiitaArticleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleAPI.swift; sourceTree = "<group>"; };
+		2C75C62C253F247C009070C1 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		2C75C635253F2A0D009070C1 /* RxArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +93,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C304299253DCDDD00A9D752 /* RxRelay.framework in Frameworks */,
+				2C304297253DCDC400A9D752 /* RxCocoa.framework in Frameworks */,
+				2C304292253DCD5E00A9D752 /* RxSwift.framework in Frameworks */,
+				2C49E1B8253887B800A3146B /* SwiftyJSON.framework in Frameworks */,
+				2C49E1B6253887A300A3146B /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +118,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C48A144253C2FD600B6035F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C49E1C12538890B00A3146B /* ArticleListViewController.swift */,
+				2C48A13B253C290000B6035F /* ArticleViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		2C49E171253883F700A3146B = {
 			isa = PBXGroup;
 			children = (
+				2C49E1B0253885DD00A3146B /* Config.xcconfig */,
 				2C49E17C253883F700A3146B /* QiitaSearch */,
 				2C49E193253883FD00A3146B /* QiitaSearchTests */,
 				2C49E19E253883FD00A3146B /* QiitaSearchUITests */,
 				2C49E17B253883F700A3146B /* Products */,
+				2C49E1B4253887A300A3146B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +152,18 @@
 		2C49E17C253883F700A3146B /* QiitaSearch */ = {
 			isa = PBXGroup;
 			children = (
+				2C48A144253C2FD600B6035F /* ViewController */,
 				2C49E17D253883F700A3146B /* AppDelegate.swift */,
 				2C49E17F253883F700A3146B /* SceneDelegate.swift */,
-				2C49E181253883F700A3146B /* ViewController.swift */,
 				2C49E183253883F700A3146B /* Main.storyboard */,
 				2C49E186253883FD00A3146B /* Assets.xcassets */,
 				2C49E188253883FD00A3146B /* LaunchScreen.storyboard */,
 				2C49E18B253883FD00A3146B /* Info.plist */,
+				2C75C602253F0DCE009070C1 /* ArticleListModel.swift */,
+				2C75C609253F0EF1009070C1 /* ArticleListViewModel.swift */,
+				2C75C61F253F162C009070C1 /* QiitaArticleAPI.swift */,
+				2C75C62C253F247C009070C1 /* ArticleTableViewCell.swift */,
+				2C75C635253F2A0D009070C1 /* RxArticleViewController.swift */,
 			);
 			path = QiitaSearch;
 			sourceTree = "<group>";
@@ -128,6 +186,18 @@
 			path = QiitaSearchUITests;
 			sourceTree = "<group>";
 		};
+		2C49E1B4253887A300A3146B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C304298253DCDDD00A9D752 /* RxRelay.framework */,
+				2C304296253DCDC400A9D752 /* RxCocoa.framework */,
+				2C304291253DCD5E00A9D752 /* RxSwift.framework */,
+				2C49E1B7253887B800A3146B /* SwiftyJSON.framework */,
+				2C49E1B5253887A300A3146B /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +208,7 @@
 				2C49E176253883F700A3146B /* Sources */,
 				2C49E177253883F700A3146B /* Frameworks */,
 				2C49E178253883F700A3146B /* Resources */,
+				2C49E1BA253887ED00A3146B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -253,12 +324,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C49E1BA253887ED00A3146B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C49E176253883F700A3146B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C49E182253883F700A3146B /* ViewController.swift in Sources */,
+				2C75C603253F0DCE009070C1 /* ArticleListModel.swift in Sources */,
+				2C75C60A253F0EF1009070C1 /* ArticleListViewModel.swift in Sources */,
+				2C75C636253F2A0D009070C1 /* RxArticleViewController.swift in Sources */,
+				2C49E1C22538890B00A3146B /* ArticleListViewController.swift in Sources */,
+				2C48A13C253C290000B6035F /* ArticleViewController.swift in Sources */,
+				2C75C62D253F247C009070C1 /* ArticleTableViewCell.swift in Sources */,
+				2C75C620253F162C009070C1 /* QiitaArticleAPI.swift in Sources */,
 				2C49E17E253883F700A3146B /* AppDelegate.swift in Sources */,
 				2C49E180253883F700A3146B /* SceneDelegate.swift in Sources */,
 			);
@@ -269,6 +371,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C49E195253883FD00A3146B /* QiitaSearchTests.swift in Sources */,
+				2C48A145253C2FE000B6035F /* ArticleViewController.swift in Sources */,
+				2C75C604253F0DCE009070C1 /* ArticleListModel.swift in Sources */,
+				2C75C621253F162C009070C1 /* QiitaArticleAPI.swift in Sources */,
+				2C49E1C32538890B00A3146B /* ArticleListViewController.swift in Sources */,
+				2C75C637253F2A0D009070C1 /* RxArticleViewController.swift in Sources */,
+				2C75C62E253F247C009070C1 /* ArticleTableViewCell.swift in Sources */,
+				2C75C60B253F0EF1009070C1 /* ArticleListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +386,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C49E1A0253883FD00A3146B /* QiitaSearchUITests.swift in Sources */,
+				2C48A146253C2FE000B6035F /* ArticleViewController.swift in Sources */,
+				2C75C605253F0DCE009070C1 /* ArticleListModel.swift in Sources */,
+				2C75C622253F162C009070C1 /* QiitaArticleAPI.swift in Sources */,
+				2C49E1C42538890B00A3146B /* ArticleListViewController.swift in Sources */,
+				2C75C638253F2A0D009070C1 /* RxArticleViewController.swift in Sources */,
+				2C75C62F253F247C009070C1 /* ArticleTableViewCell.swift in Sources */,
+				2C75C60C253F0EF1009070C1 /* ArticleListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +553,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QiitaSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +575,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QiitaSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
