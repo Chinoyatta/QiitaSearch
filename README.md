@@ -33,4 +33,8 @@ QiitaApiから特定の投稿者の記事を取得し、TableView上に表示し
 ### アプリを動かす際に
 
 ArticleListViewcontroller内のuser変数を検索したい投稿者IDに設定しビルドを行うと、  
-アプリ起動時に設定した投稿者がQiitaに投稿した記事が表示されます。  
+アプリ起動時に設定した投稿者がQiitaに投稿した記事が表示されます。
+
+### 注意
+MVVMアーキ適用を想定したファイル群が存在するが、[コード不具合](https://github.com/Chinoyatta/QiitaSearch/issues/2)により動かないので、  
+現在動くアプリにアーキテクチャの適用は行っていません。
