@@ -18,11 +18,13 @@ class RxArticleListViewController: UIViewController, UITableViewDataSource, UITa
     
     var articles: [[String: String?]] = []
     let table = UITableView()
-    let user = "Chinoyatta"
     let pageNo = "1"
     let perPage = "100"
     var webView: WKWebView!
     private let disposeBag = DisposeBag()
+    
+    // 検索に使用するユーザー名
+    let user = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
